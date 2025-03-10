@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styleView.css" />
+  </head>
+  <body>
+    <%# NAVBAR EJS FILE %> 
+    <%- include('../public/partials/navbar.ejs') %> 
+
+    <%# POST CREATION %>
+    <h2 class="heading-text">All Posts</h2>
+    <div class="post-container">
+      <% posts.forEach((post, index) => { %>
+      <div class="post-card">
+        <h3><%= post.author %></h3>
+        <p><%= post.content %></p>
+        <br />
+        <small><%= post.timestamp %></small>
+      </div>
+      <div class="btn-container">
+        <button class="btns update-btn" data-id="<%= index %>">Update</button>
+        <button class="btns delete-btn" data-id="<%= index %>">Delete</button>
+      </div>
+      <% }); %>
+    </div>
+
+    <%# FOOTER %>
+    <footer class="footer">
+      <% const d = new Date().getFullYear(); %>
+      <p>Copyright © <%= d %></p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

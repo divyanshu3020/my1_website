@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #AA00C1;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 12px;
+}
+
+.links {
+    margin: 0px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.site-name {
+    margin-left: 15px;
+    font-size: 25px;
+    padding: 8px;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.post-text {
+    /* margin-top: 50px; */
+    width: 75%;
+    /* Fixed minimum width */
+    min-height: 398px;
+    /* Minimum height */
+    max-width: 100%;
+    /* Optional: Prevents it from exceeding container width */
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid #AA00C1;
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
+    resize: none;
+    /* Prevents manual resizing */
+    line-height: 1.5;
+    text-align: left;
+    box-sizing: border-box;
+
+
+}
+
+.post-text::-webkit-scrollbar {
+    width: 12px;
+    /* Make scrollbar thinner */
+    border-radius: 15px;
+}
+
+.post-text::-webkit-scrollbar-track {
+    background: transparent;
+    /* Makes track invisible */
+    border-radius: 15px;
+}
+
+.post-text::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    /* Slightly visible */
+    border-radius: 15px;
+    border: 3px solid transparent;
+    /* Prevents overflow */
+    background-clip: padding-box;
+}
+
+
+.post-input:focus,
+.btn:active {
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.7);
+    outline: none;
+}
+
+.form-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 2px solid #AA00C1;
+    color: white;
+    margin-top: 25px;
+    background-color: #AA00C1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 4px 8px 0px rgba(170, 0, 193, 0.3);
+}
+
+.footer {
+    background-color: #AA00C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(185, 181, 181);
+    height: 50px;
+    margin-top: 10px;
+
+}
+
+.cpost {
+
+    font-family: "Rancho", cursive;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #AA00C1;
+    font-size: 45px;
+    margin-top: 25px;
+}
+
+.post-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* .textarea-container {
+    position: relative;
+    width: 75%; /* Match your textarea width */
+/* min-height: 398px;
+}
+
+.post-text {
+    width: 100%;
+    min-height: 398px;
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto;
+} */
+
+/* .inside-btn {
+    position: absolute;
+    bottom: 15px; /* Adjust positioning inside textarea */
+/* right: 13px; Keep it inside the right corner
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #007bff;
+    color: white; */
+/* border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px; */
+/* display: flex;
+    align-items: center;
+    justify-content: center; */
+/* }  */

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Include the Navbar -->
+    <%- include('../public/partials/navbar.ejs') %>
+
+    <p class="cpost">WRITE DOWN YOUR THOUGHTS HERE AND POST IT.</p>
+
+    <form class="form-container" action="/view" method="post">
+      <textarea class="post-text" type="text" name="createPost"></textarea>
+      <input class="btn" type="submit" value="Create Post" />
+    </form>
+
+    <footer class="footer">
+      <%const d = new Date()%> <%let year = d.getFullYear()%>
+
+      <p>Copyright © <%=year%></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>

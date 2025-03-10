@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #AA00C1;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 12px;
+}
+
+.links {
+    margin: 0px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.site-name {
+    margin-left: 15px;
+    font-size: 25px;
+    padding: 8px;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #AA00C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(185, 181, 181);
+    min-height: 60px;
+    width: 100%;
+}
+
+.post-card p {
+    word-wrap: break-word; /* Ensures long words wrap */
+    overflow-wrap: break-word; /* Alternative property for word wrapping */
+    width: 100%; /* Ensures it stays within the container */
+}
+.post-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 600px;
+    margin: 20px auto;
+    border-radius: 12px;
+
+}
+
+.post-card {
+    max-width: 600px; /* Ensures the container has a fixed width */
+    word-wrap: break-word;
+    background: white;
+    border: 2px solid #AA00C1;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.heading-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: #C44CD8;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* Makes track invisible */
+    border-radius: 15px;
+}
+
+.btns {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #AA00C1;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-container {
+    display: flex;
+
+}
